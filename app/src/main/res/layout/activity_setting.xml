@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.example.tilakrajchordiya.databasexa.setting">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/setting_title"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="18dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/preTime"
+        android:width="50dp"
+        android:height="40dp"
+        android:textSize="18dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:id="@+id/timeInterval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp"
+        android:width="70dp"
+        />
+
+    <Button
+        android:id="@+id/setTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/timeInterval"
+        android:onClick="setTime"
+
+        android:text="@string/setting_ok_bt" />
+
+</RelativeLayout>
